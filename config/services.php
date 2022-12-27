@@ -13,7 +13,6 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
-
     'github' => [    
         'client_id' => env('GITHUB_CLIENT_ID'),  
         'client_secret' => env('GITHUB_CLIENT_SECRET'),  
@@ -24,6 +23,7 @@ return [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
         'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
+        'scheme' => 'https',
     ],
 
     'postmark' => [

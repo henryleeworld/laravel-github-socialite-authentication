@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddGithubUserFieldsColumn extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -17,6 +17,8 @@ class AddGithubUserFieldsColumn extends Migration
             $table->string('github_id')->nullable();
             $table->string('github_nickname')->nullable();
             $table->string('github_avatar')->nullable();
+            $table->string('github_token')->nullable();
+            $table->string('github_refresh_token')->nullable();
         });
     }
 
@@ -29,4 +31,4 @@ class AddGithubUserFieldsColumn extends Migration
     {
         //
     }
-}
+};
